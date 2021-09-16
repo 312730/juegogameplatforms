@@ -11,12 +11,17 @@ config_version=4
 [application]
 
 config/name="Scoregame"
-run/main_scene="res://level1.tscn"
+run/main_scene="res://score.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-Score="*res://score.gd"
+Score="*res://score.tscn"
+
+[display]
+
+window/size/width=940
+window/size/height=529
 
 [physics]
 

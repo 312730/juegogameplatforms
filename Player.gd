@@ -2,7 +2,7 @@ extends Sprite
 
 var  vel = Vector2(130,100)
 onready var screensize = get_viewport_rect().size
-onready var width = texture.get_width() / 2.0
+onready var width = texture.get_width() / 9.0
 
 func _ready():
 	set_position(screensize /2)
@@ -13,11 +13,10 @@ func _process(delta):
 	set_rotation(get_rotation() + PI / 8 * delta)
 	var pos = get_position()
 	pos += vel * delta
-	if pos.x >= screensize.x-50 or pos.x <= 0:
+	if pos.x >= screensize.x-width or pos.x <= 0+width:
 		vel.x *= -1
-		Score.score += 10
-	if pos.y >= screensize.y-50 or pos.y <=0:
-		vel.y *+ -1
-		Score.score += 10
+		Score.add(1)
+	if pos.y >= screensize.y-width or pos.y <= 0+width:
+		vel.y *= -1
+		Score.add(1)
 	set_position(pos)
-	Score.update()

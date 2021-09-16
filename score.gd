@@ -15,7 +15,8 @@ func _ready():
 	z_index = 1
 	print("Score: ", score)
 	
-func update():
-	$ScoreLabel.text = "Score: " + str(score)
+func add(var points):
+	score += points
+	$ScoreLabel.text = "Flops: " + str(score)
 	
 	#8-31 18:46
