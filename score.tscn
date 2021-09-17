@@ -10,7 +10,18 @@ script = ExtResource( 1 )
 margin_right = 105.0
 margin_bottom = 39.0
 custom_fonts/font = ExtResource( 2 )
-text = "Score: "
+text = "Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CostLabel" type="Label" parent="."]
+margin_left = 8.98987
+margin_top = 43.4509
+margin_right = 260.99
+margin_bottom = 72.4509
+custom_fonts/font = ExtResource( 2 )
+text = "Cost of next gosha:"
 __meta__ = {
 "_edit_use_anchors_": false
 }
