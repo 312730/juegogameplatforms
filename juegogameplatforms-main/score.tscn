@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://score.gd" type="Script" id=1]
+[ext_resource path="res://fonts/scorefont.tres" type="DynamicFont" id=2]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ScoreLabel" type="Label" parent="."]
+margin_right = 105.0
+margin_bottom = 39.0
+custom_fonts/font = ExtResource( 2 )
+text = "Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CostLabel" type="Label" parent="."]
+margin_left = 8.98987
+margin_top = 43.4509
+margin_right = 260.99
+margin_bottom = 72.4509
+custom_fonts/font = ExtResource( 2 )
+text = "Cost of next gosha:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Goshas" type="Label" parent="."]
+margin_left = 12.0136
+margin_top = 93.4388
+margin_right = 52.0136
+margin_bottom = 107.439
+custom_fonts/font = ExtResource( 2 )
+text = "Goshas: "
+__meta__ = {
+"_edit_use_anchors_": false
+}

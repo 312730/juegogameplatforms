@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bonk_BEtiM8g-[AudioTrimmer.com].mp3-5d0288a2dde87f3fb4ee056bd1e0dfa3.mp3str"
+
+[deps]
+
+source_file="res://bonk_BEtiM8g-[AudioTrimmer.com].mp3"
+dest_files=[ "res://.import/bonk_BEtiM8g-[AudioTrimmer.com].mp3-5d0288a2dde87f3fb4ee056bd1e0dfa3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
